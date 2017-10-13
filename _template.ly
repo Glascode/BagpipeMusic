@@ -7,7 +7,7 @@
     % subtitle = "Subtitle"
     % poet = "Librettiste"
     meter = "March"
-    % piece = "Pièce"
+    % piece = "Piece"
     % composer = "Name"
     arranger = "Trad. arr."
     % opus = "Opus"
