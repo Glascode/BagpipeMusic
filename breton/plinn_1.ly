@@ -5,10 +5,10 @@
 #(set-default-paper-size "a6" 'landscape)
 
 \header {
-	title = "Plinn 1"
-	subtitle = "Réb et Solb"
-	meter = "Plinn"
-	arranger = "Trad. arr."
+    title = "Plinn 1"
+    subtitle = "Réb et Solb"
+    meter = "Plinn"
+    arranger = "Trad. arr."
 }
 
 \score {
