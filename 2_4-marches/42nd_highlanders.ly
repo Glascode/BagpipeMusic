@@ -3,9 +3,9 @@
 \include "bagpipe.ly"
 
 \header {
-  title = "42nd Highlanders"
-  meter = "March"
-  arranger = "Trad. arr."
+	title = "42nd Highlanders"
+	meter = "March"
+ 	arranger = "Trad. arr."
 }
 
 \score {
