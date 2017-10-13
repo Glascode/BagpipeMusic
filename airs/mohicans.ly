@@ -8,10 +8,10 @@
 }
 
 \header {
-	title = "The Last of the Mohicans"
-	meter = "March"
-	arranger = "Trad. arr."
-	tagline = ""
+    title = "The Last of the Mohicans"
+    meter = "March"
+    arranger = "Trad. arr."
+    tagline = ""
 }
 
 {
@@ -21,7 +21,7 @@
     
     % FIRST PART
     \grg b8. \gre b16 \grG b8 \grg f8. e16 d8 \grg e8. d16 c8 \grg d8. c16 \gre a8 |
-	\hideKeySignature
+    \hideKeySignature
     \grg f4. b ~ b ~ b |  % harmony 
 
     \grg b8. \gre b16 \grG b8 \grg f8. e16 d8 \grg e8. d16 c8 \grg d8. c16 \gre b8 |
