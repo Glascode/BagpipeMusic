@@ -1,4 +1,4 @@
-# Bagpipe Music with Lilypond
+# Bagpipe music with Lilypond
 
 ## Installing Lilypond
 
