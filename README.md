@@ -22,4 +22,14 @@ Run the `lilypond` script to make LilyPond compile the `.ly` file. For example :
 lilypond <file_name.ly>
 ```
 
-It will automatically compile the source file into a `.pdf` file. 
+It will automatically compile the source file into a `.pdf` file.
+
+### Writing with vim
+
+In case you are writing with the vim editor, you can add these lines to your `.vimrc` file to enable syntax highlighting:
+
+```vim
+filetype off
+set runtimepath+=/Users/Mael/Applications/LilyPond.app/Contents/Resources/share/lilypond/current/vim
+filetype on
+```
