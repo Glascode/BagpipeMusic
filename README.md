@@ -14,7 +14,7 @@ You must [download](http://lilypond.org/download.html) Lilypond before doing any
 
 2. Make the file executable with: `chmod u+x lilypond`
 
-### Make a PDF from a `.ly` file
+### Make a PDF from a LilyPond file
 
 Run the `lilypond` script to make LilyPond compile the `.ly` file. For example :
 
