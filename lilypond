@@ -1,2 +1,2 @@
 #!/bin/bash
-exec DIR/LilyPond.app/Contents/Resources/bin/lilypond $@
+exec /Applications/LilyPond.app/Contents/Resources/bin/lilypond $@
