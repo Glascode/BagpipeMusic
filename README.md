@@ -10,7 +10,7 @@ You must [download](http://lilypond.org/download.html) Lilypond before doing any
 
 ### LilyPond script file
 
-1. First of all, modify the **`lilypond`** script to set the path of your LilyPond application location.
+1. First of all, make sure the path in the **`lilypond`** script matches your LilyPond.app file location.
 
 2. Make the file executable with: `chmod u+x lilypond`
 
@@ -19,14 +19,14 @@ You must [download](http://lilypond.org/download.html) Lilypond before doing any
 Run the `lilypond` script to make LilyPond compile the `.ly` file. For example :
 
 ```
-lilypond <file_name.ly>
+lilypond [file_name.ly]
 ```
 
-It will automatically compile the source file into a `.pdf` file.
+It will compile the source file into a `.pdf` file.
 
 ### Writing with vim
 
-In case you are writing with the vim editor, you can add these lines to your `.vimrc` file to enable syntax highlighting:
+In case you are writing with the vim editor, you can add these lines to your `.vimrc` file to enable syntax highlighting for Lilypond:
 
 ```vim
 filetype off
