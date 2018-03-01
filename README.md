@@ -30,6 +30,6 @@ In case you are writing with the vim editor, you can add these lines to your `.v
 
 ```vim
 filetype off
-set runtimepath+=/Users/Mael/Applications/LilyPond.app/Contents/Resources/share/lilypond/current/vim
+set runtimepath+=~/Applications/LilyPond.app/Contents/Resources/share/lilypond/current/vim
 filetype on
 ```
