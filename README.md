@@ -12,7 +12,7 @@ You must [download](http://lilypond.org/download.html) Lilypond before doing any
 
 ## Using LilyPond with macOS (the way I use it)
 
-### Setting the `lilypond` command
+### Setting the lilypond command
 
 In order to use the `lilypond` command, export the right path as follows  (it must match with the location of your LilyPond.app file):
 
