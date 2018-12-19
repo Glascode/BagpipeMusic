@@ -1,8 +1,12 @@
 # Bagpipe music with LilyPond
 
-## Installing LilyPond
+## Getting Started
+
+### Prerequisites
 
 Before downloading Lilypond, please read about the [text input](http://lilypond.org/text-input.html).
+
+### Installing LilyPond
 
 You must [download](http://lilypond.org/download.html) Lilypond before doing any of the following.
 
