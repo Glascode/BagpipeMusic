@@ -12,18 +12,20 @@ You must [download](http://lilypond.org/download.html) Lilypond before doing any
 
 ## Using LilyPond with macOS (the way I use it)
 
-### LilyPond script file
+### Setting the `lilypond` command
 
-1. First of all, make sure the path in the **`lilypond`** script matches your LilyPond.app file location.
+In order to use the `lilypond` command, export the right path as follows  (it must match with the location of your LilyPond.app file):
 
-2. Make the file executable with: `chmod u+x lilypond`
+```bash
+export PATH="$PATH:$HOME/Applications/LilyPond.app/Contents/Resources/bin"
+```
 
-### Make a PDF from a LilyPond file
+### Making a PDF from a LilyPond file
 
-Run the `lilypond` script to make LilyPond compile the `.ly` file. For example :
+Run the `lilypond` command to make LilyPond compile the `.ly` file.
 
 ```
-lilypond [file_name.ly]
+lilypond file_name.ly
 ```
 
 It will compile the source file into a `.pdf` file.
