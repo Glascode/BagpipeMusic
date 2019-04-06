@@ -6,6 +6,7 @@
     title = "Mason's Apron"
     meter = "Reel"
     arranger = "Stuart Liddell"
+    tagline = ""
 }
 
 \score {

@@ -4,6 +4,7 @@
 
 \paper {
     print-all-headers = ##t
+    tagline = ""
 }
 
 \score {

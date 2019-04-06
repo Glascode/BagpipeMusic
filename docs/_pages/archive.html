@@ -11,19 +11,13 @@ permalink: /archive/
 <ul class="archive-list list-group list-group-flush">
     {% for score in scores %}
     <li class="list-group-item d-flex align-items-center justify-content-between">
-        <a class="text-capitalize js-score-name"
+        <a class="text-capitalize"
            href="{{ site.baseurl }}{{ score.path }}">
-            {{ score.basename }}</a>
+            {{ score.basename | replace: "_s_", "'s " | replace: '_', ' ' | capitalize }}
+        </a>
         <a href="{{ site.baseurl }}{{ score.path }}"
            class="material-icons text-body text-decoration-none"
            download="">get_app</a>
     </li>
     {% endfor %}
 </ul>
-
-<script>
-    let scoreNames = document.querySelectorAll('.js-score-name');
-    for (let name of scoreNames) {
-        name.textContent = name.textContent.replace(/_/g, ' ');
-    }
-</script>

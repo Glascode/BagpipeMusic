@@ -6,6 +6,7 @@
     title = "Joe MacGann's Fiddle"
     meter = "Slow Hornpipe"
     arranger = "D.R. MacLennan"
+    tagline= ""
 }
 
 \score {

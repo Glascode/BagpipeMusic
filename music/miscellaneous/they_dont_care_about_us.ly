@@ -5,7 +5,7 @@
 \header {
     title = "They Don't care About Us"
     meter = "Réb et Solb"
-    % composer = "Mickael Jackson"
+    composer = "Mickael Jackson"
     arranger = "Bagad Cap Caval arrangement"
     tagline = ""
 }
@@ -15,7 +15,7 @@
         \hideKeySignature
         \time 2/4
 
-        % \mark "Intro"
+        \mark "Intro"
         \repeat volta 2 {
             f8 d f d \grg e16 \gra e c8 e c
             f d \grg f16 e d8 \grg e c \grg e16 d c a
@@ -46,7 +46,7 @@
         \break
 
 
-        % \mark "Theme"
+        \mark "Theme"
         c8 a c a \grg b G b G
         c8 a c16 b a8 \grg b G b16 a G8
         c8 a c a \grg b16 \grG b G8 b G

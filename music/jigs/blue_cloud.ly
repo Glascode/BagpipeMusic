@@ -7,6 +7,7 @@
     meter = "Jig"
     % composer = "Adam Quinn"
     arranger = "Adam Quinn"
+    tagline = ""
 }
 
 \score {

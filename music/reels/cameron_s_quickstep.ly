@@ -6,6 +6,7 @@
     title = "Cameron's Quickstep"
     meter = "Reel"
     arranger = "Trad. arr. Gordon Walker"
+    tagline = ""
 }
 
 \score {

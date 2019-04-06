@@ -9,6 +9,7 @@
     subtitle = "Réb et Solb"
     meter = "Plinn"
     arranger = "Trad. arr."
+    tagline = ""
 }
 
 \score {
