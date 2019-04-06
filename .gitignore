@@ -5,6 +5,9 @@ Icon*
 # IDE
 .idea
 
+# Jekyll
+_site/
+
 # Regular files
 *.midi
 music/*.pdf
