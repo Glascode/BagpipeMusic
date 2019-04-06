@@ -5,15 +5,15 @@ id: archive
 permalink: /archive/
 ---
 
-<h4 class="mb-4">All</h4>
+{% for category in site.data.archive %}
+<h4 class="mb-4">{{ category.title | capitalize }}</h4>
 
-{% assign scores = site.static_files | where: "pdf", true %}
-<ul class="archive-list list-group list-group-flush">
-    {% for score in scores %}
+<ul class="archive-list list-group list-group-flush mb-5">
+    {% for score in category.items %}
     <li class="list-group-item d-flex align-items-center justify-content-between">
         <a class="text-capitalize"
            href="{{ site.baseurl }}{{ score.path }}">
-            {{ score.basename | replace: "_s_", "'s " | replace: '_', ' ' | capitalize }}
+            {{ score.title }}
         </a>
         <a href="{{ site.baseurl }}{{ score.path }}"
            class="material-icons text-body text-decoration-none"
@@ -21,3 +21,4 @@ permalink: /archive/
     </li>
     {% endfor %}
 </ul>
+{% endfor %}

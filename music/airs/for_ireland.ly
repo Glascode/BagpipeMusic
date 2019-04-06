@@ -6,6 +6,7 @@
     title = "For Ireland I Will Not Tell Her Name"
     meter = "Air"
     arranger = "Trad."
+    tagline = ""
 }
 
 \score {

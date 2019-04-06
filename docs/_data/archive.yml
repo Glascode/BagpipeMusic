@@ -1,25 +1,34 @@
-- title: '2_4-marches'
+- title: 2/4 marches
   items:
-    - 'sri_dasmesh.pdf'
-- title: 'breton'
+    - title: Sri Dasmesh March
+- title: airs
   items:
-    - 'montagne_1.pdf'
-    - 'plinn_1.pdf'
-    - 'plinn_2.pdf'
-- title: 'hornpipes'
+    - title: For Ireland I Will Not Tell Her Name
+    - title: The Last of the Mohicans
+    - title: Seonaidh's Air
+    - title: Sine Bhan
+- title: breton
   items:
-    - 'chasing_shadows.pdf'
-    - 'joe_macganns_fiddle.pdf'
-- title: 'jigs'
+    - title: Suite montagne
+    - title: Plinn 1
+    - title: Plinn 2
+- title: hornpipes
   items:
-    - 'anne_macphees_jig.pdf'
-    - 'blue_cloud.pdf'
-    - 'pitlochry_high_school_centenary.pdf'
-- title: 'miscellaneous'
+    - title: Chasing Shadows
+    - title: Joe MacGann's Fiddle
+- title: jigs
   items:
-    - 'galway_girl.pdf'
-    - 'they_dont_care_about_us.pdf'
-- title: 'reels'
+    - title: Cathy Anne MacPhee's Jig
+    - title: Blue Cloud
+    - title: The Pitlochry High School Centenary
+- title: miscellaneous
   items:
-    - 'cameron_s_quickstep.pdf'
-    - 'masons_apron.pdf'
+    - title: Galway Girl
+    - title: They Don't care About Us
+- title: reels
+  items:
+    - title: Cameron's Quickstep
+    - title: Mason's Apron
+- title: strathspeys
+  items:
+    - title: Seonaidh's Tune
