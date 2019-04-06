@@ -36,10 +36,11 @@ for directory in ${sources_dir}/*; do
         for file in ${directory}/*; do
             if [[ -f $file && ${file: -4} == ".pdf" ]]; then
                 # A pdf was generated from a .ly file anyway
-                file_name=${file##*/}
-                file_name="${file_name%.*}.ly"
+                file=${file##*/}
+                file_name="${file%.*}.ly"
                 score_title=$(cat ${directory}/${file_name} | awk -F ' = ' '/^ *title/ {print $2}' | sed -E 's/"//g')
-                echo "    - title: ${score_title}" >> ${data_file}
+                echo "    - title: ${score_title}"      >> ${data_file}
+                echo "      path: ${directory#*/}/${file}" >> ${data_file}
             fi
         done
     fi

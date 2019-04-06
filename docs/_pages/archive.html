@@ -12,10 +12,10 @@ permalink: /archive/
     {% for score in category.items %}
     <li class="list-group-item d-flex align-items-center justify-content-between">
         <a class="text-capitalize"
-           href="{{ site.baseurl }}{{ score.path }}">
+           href="{{ site.baseurl }}/archive/{{ score.path }}">
             {{ score.title }}
         </a>
-        <a href="{{ site.baseurl }}{{ score.path }}"
+        <a href="{{ site.baseurl }}/archive/{{ score.path }}"
            class="material-icons text-body text-decoration-none"
            download="">get_app</a>
     </li>
