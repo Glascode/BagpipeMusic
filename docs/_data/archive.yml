@@ -1,8 +1,21 @@
 - title: '2_4-marches'
   items:
     - 'sri_dasmesh.pdf'
+- title: 'breton'
+  items:
+    - 'montagne_1.pdf'
+    - 'plinn_1.pdf'
+    - 'plinn_2.pdf'
+- title: 'hornpipes'
+  items:
+    - 'chasing_shadows.pdf'
+    - 'joe_macganns_fiddle.pdf'
 - title: 'jigs'
   items:
     - 'anne_macphees_jig.pdf'
     - 'blue_cloud.pdf'
     - 'pitlochry_high_school_centenary.pdf'
+- title: 'miscellaneous'
+  items:
+    - 'galway_girl.pdf'
+    - 'they_dont_care_about_us.pdf'

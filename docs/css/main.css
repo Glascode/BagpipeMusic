@@ -7,3 +7,45 @@
 body {
     font-family: 'Inter', Arial, sans-serif;
 }
+
+.container-md {
+    max-width: 888px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #eee;
+}
+
+.header .nav {
+    max-width: 888px;
+    margin-bottom:-1px;
+}
+
+.nav.nav-primary {
+    color: #111;
+}
+
+.nav.nav-primary .nav-link {
+    padding: 1rem 0;
+    color: inherit;
+    opacity: .6;
+    border-bottom: 3px solid transparent;
+}
+
+.nav.nav-primary .nav-link:not(:last-of-type) {
+    margin-right: 3rem;
+}
+
+.nav.nav-primary .nav-link:hover,
+.nav.nav-primary .nav-link.active {
+    opacity: 1;
+    border-bottom-color: currentColor;
+}
+
+.nav.nav-primary .nav-link:first-child {
+    opacity: 1;
+    border-bottom-color: transparent;
+}

@@ -6,5 +6,10 @@ url: "https://glascode.github.io"
 
 # Build settings
 include: ["_pages"]  # include more files
+defaults:
+  - scope:
+      path: "archive"
+    values:
+      pdf: true
 kramdown:
   input: GFM

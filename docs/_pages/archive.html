@@ -2,6 +2,23 @@
 layout: default
 title: Archive
 id: archive
-permalink: /archive
+permalink: /archive/
 ---
 
+{% assign scores = site.static_files | where: "pdf", true %}
+{% for score in scores %}
+<ul>
+    <li>
+        <a class="text-capitalize js-score-name"
+           href="{{ site.baseurl }}{{ score.path }}">
+            {{ score.basename }}</a>
+    </li>
+</ul>
+{% endfor %}
+
+<script>
+    let scoreNames = document.querySelectorAll('.js-score-name');
+    for (let name of scoreNames) {
+        name.textContent = name.textContent.replace(/_/g, ' ');
+    }
+</script>
