@@ -1,0 +1,6 @@
+- id: 'index'
+  title: 'Home'
+  url: '/'
+- id: 'archive'
+  title: 'Archive'
+  url: '/archive'

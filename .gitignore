@@ -1,5 +1,11 @@
-*.pdf
-*.midi
+# System
 .DS_Store
 Icon*
+
+# IDE
+.idea
+
+# Regular files
+*.midi
+music/*.pdf
 

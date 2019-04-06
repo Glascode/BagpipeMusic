@@ -1,0 +1,10 @@
+# Site settings
+title: "Bagpipe music"
+description: ""
+baseurl: "/bagpipe-music"
+url: "https://glascode.github.io"
+
+# Build settings
+include: ["_pages"]  # include more files
+kramdown:
+  input: GFM

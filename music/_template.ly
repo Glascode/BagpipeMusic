@@ -11,7 +11,7 @@
     % composer = "Name"
     arranger = "Trad. arr."
     % opus = "Opus"
-    tagline = ""
+    tagline = ""  % no footer mention
 }
 
 \score {
