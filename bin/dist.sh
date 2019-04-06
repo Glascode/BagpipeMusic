@@ -31,7 +31,7 @@ for directory in ${sources_dir}/*; do
     if [[ -d $directory ]]; then
         category_title=$(echo ${directory##*/} | sed -E 's/_/\//g' | sed -E 's/\-/ /g')
         echo "- title: ${category_title}" >> ${data_file}
-        echo "  items:"                     >> ${data_file}
+        echo "  items:"                   >> ${data_file}
 
         for file in ${directory}/*; do
             if [[ -f $file && ${file: -4} == ".pdf" ]]; then
