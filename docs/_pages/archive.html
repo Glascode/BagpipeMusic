@@ -5,16 +5,21 @@ id: archive
 permalink: /archive/
 ---
 
+<h4 class="mb-4">All</h4>
+
 {% assign scores = site.static_files | where: "pdf", true %}
-{% for score in scores %}
-<ul>
-    <li>
+<ul class="archive-list list-group list-group-flush">
+    {% for score in scores %}
+    <li class="list-group-item d-flex align-items-center justify-content-between">
         <a class="text-capitalize js-score-name"
            href="{{ site.baseurl }}{{ score.path }}">
             {{ score.basename }}</a>
+        <a href="{{ site.baseurl }}{{ score.path }}"
+           class="material-icons text-body text-decoration-none"
+           download="">get_app</a>
     </li>
+    {% endfor %}
 </ul>
-{% endfor %}
 
 <script>
     let scoreNames = document.querySelectorAll('.js-score-name');

@@ -8,6 +8,26 @@ body {
     font-family: 'Inter', Arial, sans-serif;
 }
 
+.material-icons.inline {
+    margin-top: -1px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.archive-list .list-group-item {
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 0;
+}
+
+.archive-list .list-group-item::before {
+    content: 'arrow_forward';
+    position: absolute;
+    left: 0;
+    font-family: 'Material Icons', sans-serif;
+    font-size: 1.2rem;
+}
+
 .container-md {
     max-width: 888px;
     margin: auto;

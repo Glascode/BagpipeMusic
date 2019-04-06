@@ -1,17 +1,10 @@
 <header class="header">
     <nav class="nav nav-primary container-md">
         {% for category in site.data.categories %}
-        {% if category.id == page.id %}
-        <a class="nav-link active"
+        <a class="nav-link {% if category.id == page.id %}active{% endif %}"
            href="{{ site.baseurl }}{{ category.url }}">
             {{ category.title }}
         </a>
-        {% else %}
-        <a class="nav-link"
-           href="{{ site.baseurl }}{{ category.url }}">
-            {{ category.title }}
-        </a>
-        {% endif %}
         {% endfor %}
     </nav>
 </header>
