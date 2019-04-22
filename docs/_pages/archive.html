@@ -5,7 +5,9 @@ id: archive
 permalink: /archive/
 ---
 
-<small class="d-block mb-4 text-uppercase text-muted">By category</small>
+<small class="d-block mb-4 text-uppercase text-muted">
+    By category <i class="material-icons inline">arrow_downward</i>
+</small>
 
 {% for category in site.data.archive %}
 <h4 class="mb-4">{{ category.title | capitalize }}</h4>
@@ -13,7 +15,7 @@ permalink: /archive/
 <ul class="archive-list list-group list-group-flush mb-5">
     {% for score in category.items %}
     <li class="list-group-item d-flex align-items-center justify-content-between">
-        <a class="text-capitalize"
+        <a target="_blank"
            href="{{ site.baseurl }}/archive/{{ score.path }}">
             {{ score.title }}
         </a>
