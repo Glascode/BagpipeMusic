@@ -15,13 +15,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: 'Inter', Arial, sans-serif;
-}
-
-@supports (font-variation-settings: normal) {
-    body {
-        font-family: 'Inter var', sans-serif;
-    }
+    font-family: 'Inter', system-ui, Arial, sans-serif;
 }
 
 @supports (font-feature-settings: normal) {
