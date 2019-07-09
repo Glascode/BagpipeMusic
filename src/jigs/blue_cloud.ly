@@ -5,8 +5,8 @@
 \header {
     title = "Blue Cloud"
     meter = "Jig"
-    % composer = "Adam Quinn"
-    arranger = "Adam Quinn"
+    composer = "Adam Quinn"
+    %arranger = "Adam Quinn"
     tagline = ""
 }
 
