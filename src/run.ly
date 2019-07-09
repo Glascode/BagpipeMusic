@@ -10,4 +10,6 @@
   }
 }
 
-\include "3_4-marches/balmoral.ly"
+\include "jigs/lochaber_dance.ly"
+
+% running system inspired from https://github.com/svenax/bagpipemusic
