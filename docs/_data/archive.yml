@@ -1,19 +1,19 @@
-- title: 2/4 marches
+- title: 2/4 Marches
   items:
     - title: Sri Dasmesh March
       path: 2_4-marches/sri_dasmesh.pdf
       extname: .pdf
-- title: 3/4 marches
+- title: 3/4 Marches
   items:
     - title: Balmoral
       path: 3_4-marches/balmoral.pdf
       extname: .pdf
-- title: airs
+- title: Airs
   items:
     - title: For Ireland I Will Not Tell Her Name
       path: airs/for_ireland.pdf
       extname: .pdf
-    - title: Last of the Mohicans, the
+    - title: Last of the Mohicans, The
       path: airs/mohicans.pdf
       extname: .pdf
     - title: Seonaidh's Air
@@ -22,7 +22,7 @@
     - title: Sine Bhan
       path: airs/sine_bhan.pdf
       extname: .pdf
-- title: breton
+- title: Breton
   items:
     - title: Suite montagne
       path: breton/montagne_1.pdf
@@ -33,29 +33,23 @@
     - title: Plinn 2
       path: breton/plinn_2.pdf
       extname: .pdf
-- title: hornpipes
+- title: Hornpipes
   items:
-    - title: Cameron's Quickstep
-      path: hornpipes/Cameron's Quickstep.gif
-      extname: .gif
     - title: Chasing Shadows
       path: hornpipes/chasing_shadows.pdf
       extname: .pdf
     - title: Joe MacGann's Fiddle
       path: hornpipes/joe_macganns_fiddle.pdf
       extname: .pdf
-- title: jigs
+- title: Jigs
   items:
-    - title: Cathy Anne MacPhee's Jig
-      path: jigs/anne_macphees_jig.pdf
-      extname: .pdf
     - title: Blue Cloud
       path: jigs/blue_cloud.pdf
       extname: .pdf
-    - title: Pitlochry High School Centenary, the
+    - title: Pitlochry High School Centenary, The
       path: jigs/pitlochry_high_school_centenary.pdf
       extname: .pdf
-- title: miscellaneous
+- title: Miscellaneous
   items:
     - title: Galway Girl
       path: miscellaneous/galway_girl.pdf
@@ -63,15 +57,12 @@
     - title: They Don't care About Us
       path: miscellaneous/they_dont_care_about_us.pdf
       extname: .pdf
-- title: reels
+- title: Reels
   items:
     - title: Cameron's Quickstep
       path: reels/cameron_s_quickstep.pdf
       extname: .pdf
-    - title: Mason's Apron
-      path: reels/masons_apron.pdf
-      extname: .pdf
-- title: strathspeys
+- title: Strathspeys
   items:
     - title: Seonaidh's Tune
       path: strathspeys/seonaidhs_tune.pdf
