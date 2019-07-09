@@ -1,10 +1,5 @@
-\header {
-  title = "Balmoral"
-  meter = "March"
-  arranger = "Trad. arr."
-}
-
 \score {
+
   {
     \hideKeySignature
     \time 3/4
@@ -26,5 +21,11 @@
       \grg a8. b16 \grip c4 \dble e \grg a8. b16 \grip c2
       \dblc b8 \grG a \grip b4 \thrwd d \dblc c8. b16 \grG a2
     }
+  }
+
+  \header {
+    title = "Balmoral"
+    meter = "March"
+    arranger = "Trad. arr."
   }
 }
