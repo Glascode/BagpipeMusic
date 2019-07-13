@@ -1,21 +1,17 @@
 ---
-layout: default
+layout: archive
 title: Archive
 id: archive
+sort_by: category
 permalink: /archive/
 ---
-
-<div class="row mb-5 text-uppercase small">
-    <div class="col">Archive</div>
-    <div class="col text-right">Categories
-        <i class="material-icons-round icon-inline">arrow_downward</i></div>
-</div>
 
 {% for category in site.data.archive %}
 <h3 class="mb-4">{{ category.title }}</h3>
 
 <ul class="archive-list list-group mb-5">
-    {% for score in category.items %}
+    {% assign sorted_items = category.items | sort: "title" %}
+    {% for score in sorted_items %}
     <li class="list-group-item">
         <a target="_blank" href="{{ site.baseurl }}/archive/{{ score.path }}"
            class="d-flex align-items-center justify-content-between">

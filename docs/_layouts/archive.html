@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<div class="row mb-5 align-items-center small">
+    <div class="col d-none d-md-block text-uppercase">Archive</div>
+    <div class="col text-center">
+        <div class="btn-group">
+            <a class="btn btn-sm btn-outline-dark {% if page.sort_by == 'category' %}active{% endif %}"
+               href="{{ site.baseurl }}/archive/">
+                Category
+            </a>
+            <a class="btn btn-sm btn-outline-dark {% if page.sort_by == 'name' %}active{% endif %}"
+               href="{{ site.baseurl }}/archive/name">
+                Name
+            </a>
+        </div>
+
+    </div>
+    <div class="col d-none d-md-block text-uppercase text-right">Categories
+        <i class="material-icons-round icon-inline">arrow_downward</i></div>
+</div>
+
+{{ content }}

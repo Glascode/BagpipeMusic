@@ -154,6 +154,19 @@ h1, h2, h3, h4, h5, h6 {
     border-color: var(--accent-color-dark);
 }
 
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 200, 136, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 200, 136, .5);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    background-color: var(--accent-color-dark);
+    border-color: var(--accent-color-dark);
+}
+
 .large-title {
     font-size: 3rem;
 }

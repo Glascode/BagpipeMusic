@@ -1,0 +1,24 @@
+---
+layout: archive
+title: Archive
+id: archive
+sort_by: name
+permalink: /archive/name
+---
+{% for category in site.data.archive %}
+{% for score in category %}
+{% assign all_items = all_items | concat: category.items %}
+{% endfor %}
+{% endfor %}
+
+<ul class="archive-list list-group mb-5">
+    {% for score in all_items %}
+    <li class="list-group-item">
+        <a target="_blank" href="{{ site.baseurl }}/archive/{{ score.path }}"
+           class="d-flex align-items-center justify-content-between">
+            {{ score.title }}
+            <i class="material-icons-round rotate-45">arrow_upward</i>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
