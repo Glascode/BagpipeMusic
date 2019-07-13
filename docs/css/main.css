@@ -12,10 +12,11 @@
 }
 
 :root {
-    --background-color-1: #000000;
-    --background-color-2: #212121;
-    --color-1: #ffffff;
+    --background-color-1: #fff;
+    --background-color-2: #eee;
+    --color-1: #000;
     --accent-color: #00c888;
+    --accent-color-dark: #00a973;
 }
 
 *, *::before, *::after {
@@ -41,7 +42,7 @@ body {
 
 @supports (font-feature-settings: normal) {
     body {
-        font-feature-settings: 'ss03'; /* Curved r */
+        font-feature-settings: 'ss03'; /* curved r */
     }
 }
 
@@ -122,12 +123,6 @@ h1, h2, h3, h4, h5, h6 {
     animation: fade-up 1s .5s forwards;
 }
 
-.icon-inline {
-    font-size: 1rem;
-    height: 1rem;
-    vertical-align: text-bottom;
-}
-
 .archive-list .list-group-item {
     padding: 0;
     background-color: var(--background-color-2);
@@ -146,9 +141,39 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--background-color-1);
 }
 
+
+/* Utilities */
+
+.btn-primary {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color-dark);
+    border-color: var(--accent-color-dark);
+}
+
+.large-title {
+    font-size: 3rem;
+}
+
+.icon-inline {
+    font-size: 1rem;
+    height: 1rem;
+    vertical-align: text-bottom;
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
 .rotate-45 {
     transform: rotate(45deg);
 }
+
+
+/* Markdown */
 
 .markdown-body h1,
 .markdown-body h2,
