@@ -1,11 +1,13 @@
 <header class="header">
     <nav class="nav nav-primary container-md">
-        {% for category in site.data.categories %}
-        <a class="nav-link {% if category.id == page.id %}active{% endif %}"
-           href="{{ site.baseurl }}{{ category.url }}">
-            {{ category.title }}
+        <a class="nav-link {% if page.category == 'home' %}active{% endif %}"
+           href="{{ site.baseurl }}/">
+            Home
         </a>
-        {% endfor %}
+        <a class="nav-link {% if page.category == 'archive' %}active{% endif %}"
+           href="{{ site.baseurl }}/archive/category">
+            Archive
+        </a>
         <a class="nav-link"
            href="https://github.com/glascode/bagpipe-music">Source</a>
     </nav>
