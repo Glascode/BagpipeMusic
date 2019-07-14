@@ -316,3 +316,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer a:hover {
     color: var(--accent-color);
 }
+
+::selection {
+    color: #000000;
+    background-color: #4effbc;
+}
