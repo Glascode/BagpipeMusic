@@ -3,11 +3,16 @@ layout: default
 ---
 
 <div class="row mb-5 align-items-center small">
-    <div class="col d-none d-md-block text-uppercase">Archive</div>
+    <div class="col d-none d-md-block text-uppercase">
+        {% if page.sort_by %}
+        {{ page.sort_by | capitalize }}
+        <i class="material-icons-round icon-inline">arrow_downward</i>
+        {% endif %}
+    </div>
     <div class="col text-center">
         <div class="btn-group">
             <a class="btn btn-sm btn-outline-dark {% if page.sort_by == 'category' %}active{% endif %}"
-               href="{{ site.baseurl }}/archive/">
+               href="{{ site.baseurl }}/archive/category">
                 Category
             </a>
             <a class="btn btn-sm btn-outline-dark {% if page.sort_by == 'name' %}active{% endif %}"
@@ -17,8 +22,7 @@ layout: default
         </div>
 
     </div>
-    <div class="col d-none d-md-block text-uppercase text-right">Categories
-        <i class="material-icons-round icon-inline">arrow_downward</i></div>
+    <div class="col d-none d-md-block"></div>
 </div>
 
 {{ content }}

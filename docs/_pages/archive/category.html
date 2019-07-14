@@ -2,17 +2,16 @@
 layout: archive
 title: Archive
 id: archive
-sort_by: name
-permalink: /archive/name
+sort_by: category
+permalink: /archive/category
 ---
+
 {% for category in site.data.archive %}
-{% for score in category %}
-{% assign all_items = all_items | concat: category.items %}
-{% endfor %}
-{% endfor %}
+<h3 class="mb-4">{{ category.title }}</h3>
 
 <ul class="archive-list list-group mb-5">
-    {% for score in all_items %}
+    {% assign sorted_items = category.items | sort: "title" %}
+    {% for score in sorted_items %}
     <li class="list-group-item">
         <a target="_blank" href="{{ site.baseurl }}/archive/{{ score.path }}"
            class="d-flex align-items-center justify-content-between">
@@ -22,3 +21,4 @@ permalink: /archive/name
     </li>
     {% endfor %}
 </ul>
+{% endfor %}
