@@ -7,3 +7,7 @@ Icon*
 
 # Jekyll
 _site/
+
+src/*.pdf
+*.midi
+

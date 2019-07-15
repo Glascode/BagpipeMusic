@@ -1,12 +1,11 @@
 today = #(strftime "%e %B %Y" (localtime (current-time)))
 
 \paper {
-
   top-margin = 1\cm
 
   tagline = \markup {
     \line {
-      \tiny\concat { "WCPD ·" \today }
+      \tiny\concat { "Maël Querré · " \today }
     }
   }
 
@@ -26,5 +25,11 @@ today = #(strftime "%e %B %Y" (localtime (current-time)))
   }
 
   markup-system-spacing #'basic-distance = #10
+}
 
+\layout {
+  indent = 0.0\cm
+  \context {
+    \Score \remove "Bar_number_engraver"
+  }
 }
