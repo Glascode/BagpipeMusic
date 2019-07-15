@@ -10,5 +10,5 @@ _site/
 
 # Regular files
 *.midi
-src/*.pdf
+./src/*.pdf
 
