@@ -54,10 +54,10 @@ endTwo = { c8 A16. e32 \grg f16. [ d32 \dble e16. d32 ] }
     \break
 
     \repeat volta 2 {
-      \grip c4 \dblc c8 e \dblf f16. d32 A16. d32 \dblf f16. d32 A16. d32
+      \grip c4 \dblc c8 e \grf f16. d32 A16. d32 \grf f16. d32 A16. d32
       \dblc c4 \grip c8 e \grg f32 [ A16. \dble e16. c32 ] \dblb b8 \grg a16. b32
       \break
-      \grip c4 \dblc c8 e \dblf f16. d32 A16. d32 \dblf f16. d32 A16. d32
+      \grip c4 \dblc c8 e \grf f16. d32 A16. d32 \grf f16. d32 A16. d32
       \dblc \endTwo
     }
     \alternative {
