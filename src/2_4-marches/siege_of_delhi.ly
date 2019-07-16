@@ -3,6 +3,14 @@
 \include "bagpipe.ly"
 \include "../format.ly"
 
+\paper {
+  tagline = \markup {
+    \line {
+      \tiny\concat { "WCP&D, " \today }
+    }
+  }
+}
+
 endTwo = { c8 A16. e32 \grg f16. [ d32 \dble e16. d32 ] }
 
 \score {
@@ -68,7 +76,7 @@ endTwo = { c8 A16. e32 \grg f16. [ d32 \dble e16. d32 ] }
   }
 
   \header {
-    title = "The Seige of Delhi"
+    title = "The Siege of Delhi"
     meter = "March"
     arranger = "Trad. arr."
   }
