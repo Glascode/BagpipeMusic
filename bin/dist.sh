@@ -4,10 +4,6 @@ sources_dir="src/"
 archive_dir="docs/archive/"
 data_file="docs/_data/archive.yml"
 
-# Clean up previous version
-[ -d ${output_dir} ] || mkdir ${output_dir}
-rm -rf ${output_dir}/*
-
 # Copy source files
 basedir=$(pwd)
 cd ${sources_dir}
