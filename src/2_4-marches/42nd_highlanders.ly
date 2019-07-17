@@ -26,12 +26,8 @@
       \dblc c8 e \gra e \grg f16. g32 A8 e \dblf f e
     }
     \alternative {
-      {
-        \grg f8 A \hdble e A \hdblc c A \hdblc c b
-      }
-      {
-        \grg f8 A \hdble e8. d16 \hdblc c8 \gre a \wbirl a4
-      }
+      { \grg f8 A \hdble e A \hdblc c A \hdblc c b }
+      { \grg f8 A \hdble e8. d16 \hdblc c8 \gre a \wbirl a4 }
     }
     \bar "|."
   }
