@@ -170,6 +170,48 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Utilities */
 
+.btn-group-ios {
+    padding: .15rem;
+    background-color: #eee;
+    border-radius: .5rem;
+}
+
+.btn-group-ios .btn {
+    border: 0;
+}
+
+.btn-group-ios .btn:not(:last-child) {
+    margin-right: .3rem;
+}
+
+.btn-group-ios .btn:not(.active) {
+    background-color: transparent;
+}
+
+.btn-group-ios .btn:not(.active):hover {
+    background-color: #f9f9f9;
+}
+
+.btn-group-ios .btn-light:not(:disabled):not(.disabled).active {
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.btn-group-ios .btn {
+    min-width: 8rem;
+    border-radius: .4rem !important;
+}
+
+.btn-group-ios.btn-group-sm .btn {
+    padding: .2rem .5rem;
+}
+
+@media (max-width: 575px) {
+    .btn-group-ios {
+        width: 100%;
+    }
+}
+
 .btn-primary {
     background-color: var(--accent-color);
     border-color: var(--accent-color);

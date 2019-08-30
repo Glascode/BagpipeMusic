@@ -3,10 +3,10 @@ layout: default
 ---
 
 <div class="text-center mb-5">
-    <div class="btn-group">
-        <a class="btn btn-sm btn-outline-dark {% if page.sort_by == 'category' %}active{% endif %}"
+    <div class="btn-group btn-group-sm btn-group-ios">
+        <a class="btn btn-light {% if page.sort_by == 'category' %}active{% endif %}"
            href="{{ site.baseurl }}/archive/category">Category</a>
-        <a class="btn btn-sm btn-outline-dark {% if page.sort_by == 'name' %}active{% endif %}"
+        <a class="btn btn-light {% if page.sort_by == 'name' %}active{% endif %}"
            href="{{ site.baseurl }}/archive/name">Name</a>
     </div>
 </div>
