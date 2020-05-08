@@ -1,0 +1,9 @@
+.nav {
+  a {
+    color: inherit;
+
+    & + a {
+      @apply ml-12;
+    }
+  }
+}

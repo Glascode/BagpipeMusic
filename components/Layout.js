@@ -1,29 +1,31 @@
 import Link from 'next/link'
+import Footer from '../components/Footer'
 
 class Layout extends React.Component {
   render() {
     const { children } = this.props
     return (
-      <div className="flex-grow flex-shrink-0">
-        <header className="header">
-          <nav className="container py-1">
-            <Link href="/"
-                  className="nav-link">
-              <a>Home</a>
-            </Link>
-            <Link href="/archive"
-                  className="nav-link">
-              <a>Archive</a>
-            </Link>
-            <a className="nav-link"
-               href="https://github.com/glascode/bagpipe-music">Source</a>
-          </nav>
-        </header>
+      <>
+        <div className="flex-grow flex-shrink-0">
+          <header className="py-4 border border-b-gray-400">
+            <nav className="container nav">
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+              <Link href="/archive">
+                <a>Archive</a>
+              </Link>
+              <a href="https://github.com/glascode/bagpipe-music">Source</a>
+            </nav>
+          </header>
 
-        <main>
-          {children}
-        </main>
-      </div>
+          <main>
+            {children}
+          </main>
+        </div>
+
+        <Footer />
+      </>
     )
   }
 }

@@ -1,0 +1,71 @@
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(1em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+:root {
+  --background-color-1: #000;
+  --background-color-2: #333;
+  --color-1: #fff;
+  --accent-color: #00c888;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+#__next {
+  @apply flex flex-col;
+}
+
+body {
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a, a:hover {
+  color: theme('colors.accent');
+}
+
+.fade-up {
+  animation: fade-up 1s forwards;
+}
+
+.icon-inline {
+  font-size: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+}
+
+.archive-list .list-group-item {
+  padding: 0;
+  background-color: var(--background-color-2);
+  border: 1px solid rgba(0, 0, 0, .125)
+}
+
+.archive-list .list-group-item a {
+  padding: .75rem;
+  color: var(--color-1);
+  border-radius: inherit;
+  transition: background-color .2s;
+}
+
+.list-group-item a:hover {
+  text-decoration: none;
+  background-color: var(--background-color-1);
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
