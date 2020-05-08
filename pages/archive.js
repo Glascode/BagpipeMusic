@@ -17,6 +17,12 @@ class Archive extends React.Component {
     }
   }
 
+  getSortedScoresByName(scores) {
+    return scores.sort((current, next) => {
+      return current.title < next.title ? -1 : 1
+    })
+  }
+
   componentDidMount() {
     axios.get('/api/scores').then(response => {
       this.setState({
@@ -29,19 +35,19 @@ class Archive extends React.Component {
 
   render() {
     if (this.state.error) {
-      return <div className="container-sm pt-10 text-sm">
+      return <div className="container pt-10 text-sm">
         An error occurred when loading the archive.
       </div>
     }
 
     if (!this.state.categories) {
-      return <div className="container-sm pt-10 text-sm">
+      return <div className="container pt-10 text-sm">
         Loading...
       </div>
     }
 
     return (
-      <div className="container-sm pt-10 text-sm">
+      <div className="container pt-10 text-sm">
         <div className="flex justify-between mb-5 last:mb-0 uppercase text-xs text-gray-700">
           <div>Archive</div>
           <div className="flex items-center">
@@ -49,15 +55,15 @@ class Archive extends React.Component {
           </div>
         </div>
 
-        {this.state.categories.map(category => {
+        {this.state.categories.map((category, index) => {
           return (
-            <div className="mb-8">
+            <div key={index} className="mb-8">
               <h3 className="mb-4 text-xl font-semibold">{category.title}</h3>
 
               <ul className="archive-list list-group">
-                {category.items.map(score => {
+                {this.getSortedScoresByName(category.items).map((score, index) => {
                   return (
-                    <li className="mb-2 last:mb-0">
+                    <li key={index} className="mb-2 last:mb-0">
                       <a target="_blank"
                          href={`/archive/${score.path}`}
                          className="inline-flex items-center">

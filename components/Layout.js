@@ -10,7 +10,7 @@ class Layout extends React.Component {
         <div className="flex-grow flex-shrink-0">
           <Header />
 
-          <main>
+          <main className="h-full">
             {children}
           </main>
         </div>
