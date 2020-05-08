@@ -34,8 +34,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a, a:hover {
+a {
   color: theme('colors.accent');
+
+  &:hover {
+    @apply underline;
+  }
 }
 
 .fade-up {
@@ -46,26 +50,4 @@ a, a:hover {
   font-size: 1rem;
   height: 1rem;
   vertical-align: text-bottom;
-}
-
-.archive-list .list-group-item {
-  padding: 0;
-  background-color: var(--background-color-2);
-  border: 1px solid rgba(0, 0, 0, .125)
-}
-
-.archive-list .list-group-item a {
-  padding: .75rem;
-  color: var(--color-1);
-  border-radius: inherit;
-  transition: background-color .2s;
-}
-
-.list-group-item a:hover {
-  text-decoration: none;
-  background-color: var(--background-color-1);
-}
-
-.rotate-45 {
-  transform: rotate(45deg);
 }

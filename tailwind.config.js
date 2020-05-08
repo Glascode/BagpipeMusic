@@ -5,7 +5,7 @@ module.exports = {
     colors: {
       accent: '#00c888',
       gray: {
-        '100': '#f5f5f5',
+        '100': '#fafafa',
         '200': '#eeeeee',
         '300': '#e0e0e0',
         '400': '#bdbdbd',
@@ -17,13 +17,22 @@ module.exports = {
       }
     }
   },
-  variants: {},
+  variants: {
+    margin: ['responsive', 'last']
+  },
   plugins: [
     plugin(function ({ addUtilities }) {
       const containers = {
         '.container': {
           width: '90%',
           maxWidth: '900px',
+          marginLeft: 'auto',
+          marginRight: 'auto'
+        },
+
+        '.container-sm': {
+          width: '90%',
+          maxWidth: '640px',
           marginLeft: 'auto',
           marginRight: 'auto'
         }
