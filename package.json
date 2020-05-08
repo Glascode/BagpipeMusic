@@ -1,0 +1,32 @@
+{
+  "name": "bagpipe-music",
+  "version": "1.0.0",
+  "description": "Bagpipe tunes, written with Lilypond.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maelquerre/bagpipe-music.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maelquerre/bagpipe-music/issues"
+  },
+  "homepage": "https://github.com/maelquerre/bagpipe-music#readme",
+  "dependencies": {
+    "next": "^9.3.6",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "swr": "^0.2.0",
+    "tailwindcss": "^1.4.6"
+  }
+}

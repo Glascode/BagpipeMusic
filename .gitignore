@@ -1,13 +1,8 @@
-# System
 .DS_Store
-Icon*
+.idea/
+.next/
 
-# IDE
-.idea
+node_modules/
 
-# Jekyll
-_site/
-
-# Regular files
 *.midi
 src/**/*.pdf

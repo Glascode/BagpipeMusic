@@ -1,8 +1,13 @@
-# Bagpipe music with LilyPond
+# Bagpipe music
+
+Bagpipe tunes, written with Lilypond.
 
 ## Getting Started
 
 ### Prerequisites
+
+- [Node.js 10.13](https://nodejs.org/) or later
+- [Lilypond 2.18.2](https://lilypond.org/)
 
 Before downloading Lilypond, please read about the [text input](http://lilypond.org/text-input.html).
 
