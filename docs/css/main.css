@@ -12,9 +12,9 @@
 }
 
 :root {
-    --background-color-1: #000000;
-    --background-color-2: #212121;
-    --color-1: #ffffff;
+    --background-color-1: #fff;
+    --background-color-2: #fff;
+    --color-1: #000;
     --accent-color: #00c888;
 }
 
@@ -37,12 +37,6 @@ body {
     font-family: 'Inter', system-ui, Arial, sans-serif;
     color: var(--color-1);
     background-color: var(--background-color-1);
-}
-
-@supports (font-feature-settings: normal) {
-    body {
-        font-feature-settings: 'ss03'; /* Curved r */
-    }
 }
 
 a, a:hover {
@@ -131,7 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 .archive-list .list-group-item {
     padding: 0;
     background-color: var(--background-color-2);
-    border: 1px solid rgba(255, 255, 255, .125)
+    border: 1px solid rgba(0, 0, 0, .125)
 }
 
 .archive-list .list-group-item a {
