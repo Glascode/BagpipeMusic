@@ -81,14 +81,14 @@ class Archive extends React.Component {
       </div>
     }
 
-    if (!this.state.tunes) {
+    if (!(this.state.categories && this.state.tunes)) {
       return <div className="container pt-10 text-sm">
         Loading scores...
       </div>
     }
 
     return (
-      <div className="container pt-10 text-sm">
+      <div className="container py-10 text-sm">
         <table className="table">
           <thead>
             <tr>
