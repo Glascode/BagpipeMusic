@@ -1,6 +1,6 @@
 import React from 'react'
 import axios from 'axios'
-import { ArrowDown, ArrowUpRight } from 'react-feather'
+import { ArrowUpRight, ChevronDown } from 'react-feather'
 
 function fetcher(url) {
   return fetch(url).then(response => response.json())
@@ -12,19 +12,21 @@ class Archive extends React.Component {
 
     this.state = {
       categories: null,
-      sort: 'NAME',
+      tunes: null,
+      sortBy: 'title',
       error: null
     }
   }
 
-  getSortedScoresByName(scores) {
-    return scores.sort((current, next) => {
-      return current.title < next.title ? -1 : 1
-    })
+  sortBy(sort) {
+    if (this.state.sortBy !== sort) {
+      this.setState({ sortBy: sort })
+      this.fetchTunes(sort)
+    }
   }
 
-  componentDidMount() {
-    axios.get('/api/scores').then(response => {
+  fetchCategories() {
+    axios.get('/api/categories').then(response => {
       this.setState({
         categories: response.data
       })
@@ -33,49 +35,84 @@ class Archive extends React.Component {
     })
   }
 
+  fetchTunes(sort) {
+    // Fetch tunes
+    axios.get(`/api/tunes?sort=${sort}`).then(response => {
+      this.setState({
+        tunes: response.data
+      })
+    }).catch(error => {
+      this.setState({ error: error })
+    })
+  }
+
+  componentDidMount() {
+    this.fetchCategories()
+    this.fetchTunes('title')
+  }
+
+  renderTunesByTitle() {
+    return (
+      <>
+        {this.state.tunes.map((tune, index) => {
+          return (
+            <tr key={index}>
+              <td>
+                <a target="_blank"
+                   href={`/archive/${tune.path}`}>
+                  {tune.title}
+                </a>
+              </td>
+              <td>{this.state.categories.find(({ id }) => id === tune.category).title}</td>
+            </tr>
+          )
+        })}
+      </>
+    )
+  }
+
   render() {
     if (this.state.error) {
       return <div className="container pt-10 text-sm">
-        An error occurred when loading the archive.
+        <p className="mb-3">Sorry, an error occurred when loading the archive. Please try again later.</p>
+        <p>
+          If the problem persists, please <a href="mailto:mael.querre@gmail.com">contact me</a> or <a href="https://github.com/maelquerre/bagpipe-music/issues">file an issue</a> on the project's GitHub repository.
+        </p>
       </div>
     }
 
-    if (!this.state.categories) {
+    if (!this.state.tunes) {
       return <div className="container pt-10 text-sm">
-        Loading...
+        Loading scores...
       </div>
     }
 
     return (
       <div className="container pt-10 text-sm">
-        <div className="flex justify-between mb-5 last:mb-0 uppercase text-xs text-gray-700">
-          <div>Archive</div>
-          <div className="flex items-center">
-            Categories <ArrowDown size={16} className="ml-2" />
-          </div>
-        </div>
+        <table className="table">
+          <thead>
+            <tr>
+              <th>
+                <button className="flex items-center uppercase"
+                        onClick={() => this.sortBy('title')}>
+                  Title
+                  {this.state.sortBy === 'title' && <ChevronDown size={14} className="flex-shrink-0 ml-1" />}
+                </button>
+              </th>
+              <th>
+                <button className="flex items-center uppercase"
+                        onClick={() => this.sortBy('category')}>
+                  Category
+                  {this.state.sortBy === 'category' && <ChevronDown size={14} className="flex-shrink-0 ml-1" />}
+                </button>
+              </th>
+            </tr>
+          </thead>
 
-        {this.state.categories.map((category, index) => {
-          return (
-            <div key={index} className="mb-8">
-              <h3 className="mb-4 text-xl font-semibold">{category.title}</h3>
-
-              <ul className="archive-list list-group">
-                {this.getSortedScoresByName(category.items).map((score, index) => {
-                  return (
-                    <li key={index} className="mb-2 last:mb-0">
-                      <a target="_blank"
-                         href={`/archive/${score.path}`}
-                         className="inline-flex items-center">
-                        <ArrowUpRight size={16} className="mr-2" /> {score.title}
-                      </a>
-                    </li>
-                  )
-                })}
-              </ul>
-            </div>
-          )
-        })}
+          <tbody>
+            {this.renderTunesByTitle()}
+          </tbody>
+        </table>
       </div>
     )
   }

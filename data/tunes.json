@@ -1,0 +1,104 @@
+[
+  {
+    "title": "Sri Dasmesh March",
+    "category": "2_4-marches",
+    "path": "2_4-marches/sri_dasmesh.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Balmoral",
+    "category": "3_4-marches",
+    "path": "3_4-marches/balmoral.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "For Ireland I Will Not Tell Her Name",
+    "category": "airs",
+    "path": "airs/for_ireland.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Last of the Mohicans, The",
+    "category": "airs",
+    "path": "airs/mohicans.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Seonaidh's Air",
+    "category": "airs",
+    "path": "airs/seonaidhs_air.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Sine Bhan",
+    "category": "airs",
+    "path": "airs/sine_bhan.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Suite montagne",
+    "category": "breton",
+    "path": "breton/montagne_1.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Plinn 1",
+    "category": "breton",
+    "path": "breton/plinn_1.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Plinn 2",
+    "category": "breton",
+    "path": "breton/plinn_2.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Chasing Shadows",
+    "category": "hornpipes",
+    "path": "hornpipes/chasing_shadows.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Joe MacGann's Fiddle",
+    "category": "hornpipes",
+    "path": "hornpipes/joe_macganns_fiddle.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Blue Cloud",
+    "category": "jigs",
+    "path": "jigs/blue_cloud.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Pitlochry High School Centenary, The",
+    "category": "jigs",
+    "path": "jigs/pitlochry_high_school_centenary.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Galway Girl",
+    "category": "misc",
+    "path": "miscellaneous/galway_girl.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "They Don't Care About Us",
+    "category": "misc",
+    "path": "miscellaneous/they_dont_care_about_us.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Cameron's Quickstep",
+    "category": "reels",
+    "path": "reels/cameron_s_quickstep.pdf",
+    "extname": ".pdf"
+  },
+  {
+    "title": "Seonaidh's Tune",
+    "category": "strathspeys",
+    "path": "strathspeys/seonaidhs_tune.pdf",
+    "extname": ".pdf"
+  }
+]

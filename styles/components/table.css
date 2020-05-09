@@ -1,0 +1,21 @@
+.table {
+  @apply w-full;
+
+  th {
+    @apply px-0 py-2;
+    @apply font-normal;
+    @apply text-xs;
+    @apply text-gray-600;
+    @apply uppercase;
+    @apply text-left;
+  }
+
+  td {
+    @apply px-0 py-1;
+    @apply border-b border-gray-200;
+  }
+
+  td:not(:last-child) {
+    @apply pr-8;
+  }
+}

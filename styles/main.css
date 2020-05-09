@@ -3,5 +3,6 @@
 
 @import "tailwindcss/components";
 @import "components/nav.css";
+@import "components/table.css";
 
 @import "tailwindcss/utilities";

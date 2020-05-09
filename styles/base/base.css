@@ -51,3 +51,7 @@ a {
   height: 1rem;
   vertical-align: text-bottom;
 }
+
+button:focus {
+  @apply outline-none;
+}

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <header className="py-4 text-sm border border-b-gray-400">
+    <header className="py-4 text-sm border-b border-gray-200">
       <nav className="container nav">
         <Link href="/">
           <a>Home</a>
@@ -10,7 +10,6 @@ function Header() {
         <Link href="/archive">
           <a>Archive</a>
         </Link>
-        <a href="https://github.com/glascode/bagpipe-music">Source</a>
       </nav>
     </header>
   )
