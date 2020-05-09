@@ -11,6 +11,13 @@ Bagpipe tunes, written with Lilypond.
 
 Before downloading Lilypond, please read about the [text input](http://lilypond.org/text-input.html).
 
+### Installation
+
+Install dependencies:
+```sh
+npm install
+```
+
 ### Installing LilyPond
 
 You must [download](http://lilypond.org/download.html) Lilypond before doing any of the following.
